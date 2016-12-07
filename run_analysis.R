@@ -41,7 +41,7 @@ melted = melt(data.mean.std, id.var = c("subject", "label"))
 means = dcast(melted , subject + label ~ variable, mean)
 
 # Save the resulting dataset
-write.csv(means, file="./means.csv")
+write.table(means, file="./means.txt", row.names = FALSE)
 
 # Output final dataset
 means
