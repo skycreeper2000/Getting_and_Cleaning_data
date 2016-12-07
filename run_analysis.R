@@ -44,4 +44,4 @@ means = dcast(melted , subject + label ~ variable, mean)
 write.table(means, file="./means.txt", row.names = FALSE)
 
 # Output final dataset
-means
+#means
